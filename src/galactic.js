@@ -39,12 +39,12 @@ export class GalacticAge {
   }
 
   venusLifeExpectancy() {
-    // this.venusLifeForce = this.venusAge - this.lifeExpectancy;
-    // if (this.venusLifeForce <= 0) {
-    //   this.venusLifeForce = this.venusLifeForce * -1;
-    // }
-    // console.log(this.venusLifeForce);
-    // return this.venusLifeForce;
+    this.venusLifeForce = this.venusAge - this.lifeExpectancy;
+    if (this.venusLifeForce <= 0) {
+      this.venusLifeForce = this.venusLifeForce * -1;
+    }
+    console.log(this.venusLifeForce);
+    return this.venusLifeForce;
   }
 }
 
