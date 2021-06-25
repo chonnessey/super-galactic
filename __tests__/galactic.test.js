@@ -20,7 +20,7 @@ describe('GalacticAge', () => {
 
   test('mercAge method should return users age in mercury', () => {
     let venAge = new GalacticAge(29);
-    venAge.venusAge();
+    venAge.venAge();
     expect(venAge.venusAge).toEqual(17.98);
   });
 });
