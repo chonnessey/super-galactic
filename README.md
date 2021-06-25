@@ -49,5 +49,5 @@ ___
 <br />
 <br />
 <p align="center">
-  <small>Made in Portland, Oregon. </small>
+  <small>Made in Portland, Oregon.</small>
 </p>
