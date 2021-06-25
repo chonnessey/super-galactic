@@ -20,6 +20,7 @@ export class GalacticAge {
   }
 
   jupAge() {
-    
+    this.jupiterAge = this.age * 11.86;
+    return this.jupiterAge;
   }
 }

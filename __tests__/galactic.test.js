@@ -33,6 +33,6 @@ describe('GalacticAge', () => {
   test('jupAge method should return users age in jupiter', () => {
     let jAge = new GalacticAge(29);
     jAge.jupAge();
-    expect(jAge.marsAge).toEqual(343.94);
+    expect(jAge.jupiterAge).toEqual(343.94);
   });
 });
