@@ -3,6 +3,7 @@ export class GalacticAge {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
     this.mercuryAge = 0
+    this.mercuryLifeForce = 0;
   }
 
   mercAge() {
@@ -26,14 +27,18 @@ export class GalacticAge {
   }
 
   mercLifeExpectancy() {
-    let mercLifeForce = this.mercuryAge - this.lifeExpectancy;
-    console.log(mercLifeForce)
-    let mercYearsLeft = 0
-    if (mercLifeForce <= 0) {
-      mercYearsLeft++
-    }
-    return mercYearsLeft;
+    // this.mercuryLifeForce = this.mercuryAge - this.lifeExpectancy;
+    // if (this.mercuryLifeForce <= 0) {
+    //   this.mercuryLifeForce = this.mercuryLifeForce * -1;
+    // } else {
+    //   this.mercuryLifeForce = this.mercuryLifeForce * -1;
+    // }
+    // console.log(this.mercuryLifeForce);
+    // return this.mercuryLifeForce;
   }
 }
-let newTest = new GalacticAge(29, 100);
-console.log(newTest.mercLifeExpectancy());
+
+let newTest = new GalacticAge(25, 100);
+newTest.mercAge();
+newTest.mercLifeExpectancy();
+console.log(newTest);

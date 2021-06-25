@@ -35,4 +35,11 @@ describe('GalacticAge', () => {
     jAge.jupAge();
     expect(jAge.jupiterAge).toEqual(343.94);
   });
+
+  test('mercLifeExpectancy method should return users life expectancy if they still have time to live', () => {
+    let planet = new GalacticAge(25, 100);
+    planet.mercAge();
+    planet.mercLifeExpectancy();
+    expect(planet.mercuryLifeForce).toEqual(94)
+  });
 });
