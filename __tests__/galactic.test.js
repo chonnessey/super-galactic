@@ -71,4 +71,10 @@ describe('GalacticAge', () => {
     expect(planet.marsLifeForce).toEqual(53)
   });
 
+  test('venusLifeExpectancy method should return users life expectancy as a negative number if they have lived past their life expectancy', () => {
+    let planet = new GalacticAge(500, 100);
+    planet.marsAge();
+    planet.marsLifeExpectancy();
+    expect(planet.marsLifeForce).toEqual(-210);
+  });
 });
