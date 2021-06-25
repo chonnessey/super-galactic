@@ -49,4 +49,11 @@ describe('GalacticAge', () => {
     planet.mercLifeExpectancy();
     expect(planet.mercuryLifeForce).toEqual(-20)
   });
+
+  test('venusLifeExpectancy method should return users life expectancy as a positive number if they still have time to live', () => {
+    let planet = new GalacticAge(25, 100);
+    planet.venAge();
+    planet.venusLifeExpectancy();
+    expect(planet.venusLifeForce).toEqual(84.5)
+  });
 });
