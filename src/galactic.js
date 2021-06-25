@@ -1,5 +1,6 @@
 export class GalacticAge {
-  constructor(age) {
+  constructor(age, lifeExpectancy) {
     this.age = age;
+    this.lifeExpectancy = lifeExpectancy;
   }
 }

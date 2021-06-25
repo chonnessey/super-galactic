@@ -8,7 +8,7 @@ describe('GalacticAge', () => {
   });
 
   test('GalacticAge should have lifeExpectancy property', () => {
-    let newAge = new GalacticAge(50)
+    let newAge = new GalacticAge(50, 125)
     expect(newAge.lifeExpectancy).toBeDefined();
   });
 });
