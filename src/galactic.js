@@ -64,7 +64,14 @@ export class GalacticAge {
   }
 
   jupiterLifeExpectancy() {
-    
+    this.jupiterLifeForce = this.jupiterAge - this.lifeExpectancy;
+    if (this.jupiterLifeForce <= 0) {
+      this.jupiterLifeForce = this.jupiterLifeForce * -1;
+    // } else {
+    //   this.jupiterLifeForce = this.jupiterLifeForce * -1;
+    }
+    console.log(this.jupiterLifeForce);
+    return this.jupiterLifeForce;
   }
 }
 

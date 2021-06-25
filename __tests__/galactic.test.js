@@ -82,6 +82,6 @@ describe('GalacticAge', () => {
     let planet = new GalacticAge(5, 100);
     planet.jupAge();
     planet.jupiterLifeExpectancy();
-    expect(planet.jupiterLifeForce).toEqual(53)
+    expect(planet.jupiterLifeForce).toEqual(40.7)
   });
 });
