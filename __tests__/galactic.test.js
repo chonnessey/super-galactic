@@ -61,6 +61,6 @@ describe('GalacticAge', () => {
     let planet = new GalacticAge(500, 100);
     planet.venAge();
     planet.venusLifeExpectancy();
-    expect(planet.venusLifeForce).toEqual(84.5)
+    expect(planet.venusLifeForce).toEqual(-210);
   });
 });

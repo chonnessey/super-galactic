@@ -42,13 +42,15 @@ export class GalacticAge {
     this.venusLifeForce = this.venusAge - this.lifeExpectancy;
     if (this.venusLifeForce <= 0) {
       this.venusLifeForce = this.venusLifeForce * -1;
+    } else {
+      this.venusLifeForce = this.venusLifeForce * -1;
     }
     console.log(this.venusLifeForce);
     return this.venusLifeForce;
   }
 }
 
-let newTest = new GalacticAge(25, 100);
+let newTest = new GalacticAge(500, 100);
 newTest.venAge();
 newTest.venusLifeExpectancy();
 console.log(newTest);
