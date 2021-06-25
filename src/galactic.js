@@ -54,14 +54,14 @@ export class GalacticAge {
   }
 
   marsLifeExpectancy() {
-    // this.marsLifeForce = this.marAge - this.lifeExpectancy;
-    // if (this.marsLifeForce <= 0) {
-    //   this.marsLifeForce = this.marsLifeForce * -1;
+    this.marsLifeForce = this.marAge - this.lifeExpectancy;
+    if (this.marsLifeForce <= 0) {
+      this.marsLifeForce = this.marsLifeForce * -1;
     // } else {
     //   this.marsLifeForce = this.marsLifeForce * -1;
-    // }
-    // console.log(this.marsLifeForce);
-    // return this.marsLifeForce;
+    }
+    console.log(this.marsLifeForce);
+    return this.marsLifeForce;
   }
 }
 
