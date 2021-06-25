@@ -18,4 +18,8 @@ export class GalacticAge {
     this.marsAge = this.age * 1.88;
     return this.marsAge;
   }
+
+  jupAge() {
+    
+  }
 }
