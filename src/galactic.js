@@ -2,6 +2,7 @@ export class GalacticAge {
   constructor(age, lifeExpectancy) {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
+    this.mercuryAge = 0
   }
 
   mercAge() {
@@ -23,4 +24,16 @@ export class GalacticAge {
     this.jupiterAge = this.age * 11.86;
     return this.jupiterAge;
   }
+
+  mercLifeExpectancy() {
+    let mercLifeForce = this.mercuryAge - this.lifeExpectancy;
+    console.log(mercLifeForce)
+    let mercYearsLeft = 0
+    if (mercLifeForce <= 0) {
+      mercYearsLeft++
+    }
+    return mercYearsLeft;
+  }
 }
+let newTest = new GalacticAge(29, 100);
+console.log(newTest.mercLifeExpectancy());
