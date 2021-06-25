@@ -5,7 +5,7 @@ export class GalacticAge {
   }
 
   mercAge() {
-    // this.mercuryAge = this.age * .24;
-    // return this.mercuryAge;
+    this.mercuryAge = this.age * .24;
+    return this.mercuryAge;
   }
 }

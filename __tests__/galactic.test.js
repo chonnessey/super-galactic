@@ -14,6 +14,7 @@ describe('GalacticAge', () => {
 
   test('mercAge method should return users age in mercury', () => {
     let mercAge = new GalacticAge(29);
+    mercAge.mercAge();
     expect(mercAge.mercuryAge).toEqual(6.96);
   });
   
