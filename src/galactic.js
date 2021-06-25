@@ -15,6 +15,7 @@ export class GalacticAge {
   }
 
   marsAge() {
-    
+    this.marsAge = this.age * 1.88;
+    return this.marsAge;
   }
 }

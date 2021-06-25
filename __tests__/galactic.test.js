@@ -27,6 +27,6 @@ describe('GalacticAge', () => {
   test('marsAge method should return users age in mars', () => {
     let mAge = new GalacticAge(29);
     mAge.marsAge();
-    expect(mAge.marsAge).toEqual(54.52);
+    expect(mAge.marsAge).toBeCloseTo(54.52);
   });
 });
