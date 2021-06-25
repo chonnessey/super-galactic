@@ -77,4 +77,11 @@ describe('GalacticAge', () => {
     planet.marsLifeExpectancy();
     expect(planet.marsLifeForce).toEqual(-840);
   });
+
+  test('jupiterLifeExpectancy method should return users life expectancy as a positive number if they still have time to live', () => {
+    let planet = new GalacticAge(5, 100);
+    planet.jupAge();
+    planet.jupiterLifeExpectancy();
+    expect(planet.jupiterLifeForce).toEqual(53)
+  });
 });

@@ -49,7 +49,6 @@ export class GalacticAge {
     } else {
       this.venusLifeForce = this.venusLifeForce * -1;
     }
-    console.log(this.venusLifeForce);
     return this.venusLifeForce;
   }
 
@@ -63,9 +62,13 @@ export class GalacticAge {
     console.log(this.marsLifeForce);
     return this.marsLifeForce;
   }
+
+  jupiterLifeExpectancy() {
+    
+  }
 }
 
-let newTest = new GalacticAge(25, 100);
-newTest.marsAge();
-newTest.marsLifeExpectancy();
+let newTest = new GalacticAge(5, 100);
+newTest.jupAge();
+newTest.jupiterLifeExpectancy();
 console.log(newTest);
