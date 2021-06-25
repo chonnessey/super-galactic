@@ -75,6 +75,6 @@ describe('GalacticAge', () => {
     let planet = new GalacticAge(500, 100);
     planet.marsAge();
     planet.marsLifeExpectancy();
-    expect(planet.marsLifeForce).toEqual(-210);
+    expect(planet.marsLifeForce).toEqual(-840);
   });
 });
