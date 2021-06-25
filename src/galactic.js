@@ -75,7 +75,7 @@ export class GalacticAge {
   }
 }
 
-let newTest = new GalacticAge(5, 100);
+let newTest = new GalacticAge(40, 100);
 newTest.jupAge();
 newTest.jupiterLifeExpectancy();
 console.log(newTest);
