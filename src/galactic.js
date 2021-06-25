@@ -8,4 +8,8 @@ export class GalacticAge {
     this.mercuryAge = this.age * .24;
     return this.mercuryAge;
   }
+
+  venusAge() {
+    
+  }
 }

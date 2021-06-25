@@ -17,5 +17,10 @@ describe('GalacticAge', () => {
     mercAge.mercAge();
     expect(mercAge.mercuryAge).toEqual(6.96);
   });
-  
+
+  test('mercAge method should return users age in mercury', () => {
+    let venAge = new GalacticAge(29);
+    venAge.venusAge();
+    expect(venAge.venusAge).toEqual(17.98);
+  });
 });
