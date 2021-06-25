@@ -18,9 +18,15 @@ describe('GalacticAge', () => {
     expect(mercAge.mercuryAge).toEqual(6.96);
   });
 
-  test('mercAge method should return users age in mercury', () => {
+  test('venAge method should return users age in venus', () => {
     let venAge = new GalacticAge(29);
     venAge.venAge();
     expect(venAge.venusAge).toEqual(17.98);
+  });
+
+  test('marsAge method should return users age in mars', () => {
+    let mAge = new GalacticAge(29);
+    mAge.marsAge();
+    expect(mAge.marsAge).toEqual(54.52);
   });
 });
