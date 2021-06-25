@@ -27,14 +27,14 @@ export class GalacticAge {
   }
 
   mercLifeExpectancy() {
-    // this.mercuryLifeForce = this.mercuryAge - this.lifeExpectancy;
-    // if (this.mercuryLifeForce <= 0) {
-    //   this.mercuryLifeForce = this.mercuryLifeForce * -1;
-    // } else {
-    //   this.mercuryLifeForce = this.mercuryLifeForce * -1;
-    // }
-    // console.log(this.mercuryLifeForce);
-    // return this.mercuryLifeForce;
+    this.mercuryLifeForce = this.mercuryAge - this.lifeExpectancy;
+    if (this.mercuryLifeForce <= 0) {
+      this.mercuryLifeForce = this.mercuryLifeForce * -1;
+    } else {
+      this.mercuryLifeForce = this.mercuryLifeForce * -1;
+    }
+    console.log(this.mercuryLifeForce);
+    return this.mercuryLifeForce;
   }
 }
 
