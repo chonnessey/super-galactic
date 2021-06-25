@@ -36,10 +36,17 @@ describe('GalacticAge', () => {
     expect(jAge.jupiterAge).toEqual(343.94);
   });
 
-  test('mercLifeExpectancy method should return users life expectancy if they still have time to live', () => {
+  test('mercLifeExpectancy method should return users life expectancy as a positive number if they still have time to live', () => {
     let planet = new GalacticAge(25, 100);
     planet.mercAge();
     planet.mercLifeExpectancy();
     expect(planet.mercuryLifeForce).toEqual(94)
+  });
+
+  test('mercLifeExpectancy method should return users life expectancy as a negative number if they have lived past their life expectancy', () => {
+    let planet = new GalacticAge(500, 100);
+    planet.mercAge();
+    planet.mercLifeExpectancy();
+    expect(planet.mercuryLifeForce).toEqual(-20)
   });
 });
