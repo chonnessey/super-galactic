@@ -70,12 +70,6 @@ export class GalacticAge {
     } else {
       this.jupiterLifeForce = this.jupiterLifeForce * -1;
     }
-    console.log(this.jupiterLifeForce);
     return this.jupiterLifeForce;
   }
 }
-
-let newTest = new GalacticAge(40, 100);
-newTest.jupAge();
-newTest.jupiterLifeExpectancy();
-console.log(newTest);
