@@ -27,7 +27,7 @@ describe('GalacticAge', () => {
   test('marsAge method should return users age in mars', () => {
     let mAge = new GalacticAge(29);
     mAge.marsAge();
-    expect(mAge.marsAge).toBeCloseTo(54.52);
+    expect(mAge.marAge).toBeCloseTo(54.52);
   });
 
   test('jupAge method should return users age in jupiter', () => {
@@ -63,4 +63,12 @@ describe('GalacticAge', () => {
     planet.venusLifeExpectancy();
     expect(planet.venusLifeForce).toEqual(-210);
   });
+
+  test('marsLifeExpectancy method should return users life expectancy as a positive number if they still have time to live', () => {
+    let planet = new GalacticAge(25, 100);
+    planet.marsAge();
+    planet.marsLifeExpectancy();
+    expect(planet.marsLifeForce).toEqual(84.5)
+  });
+
 });

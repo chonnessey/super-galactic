@@ -6,6 +6,10 @@ export class GalacticAge {
     this.mercuryLifeForce = 0;
     this.venusAge = 0;
     this.venusLifeForce = 0;
+    this.marAge = 0;
+    this.marsLifeForce = 0;
+    this.jupiterAge = 0;
+    this.jupiterLifeForce = 0;
   }
 
   mercAge() {
@@ -19,8 +23,8 @@ export class GalacticAge {
   }
 
   marsAge() {
-    this.marsAge = this.age * 1.88;
-    return this.marsAge;
+    this.marAge = this.age * 1.88;
+    return this.marAge;
   }
 
   jupAge() {
@@ -48,9 +52,20 @@ export class GalacticAge {
     console.log(this.venusLifeForce);
     return this.venusLifeForce;
   }
+
+  marsLifeExpectancy() {
+    // this.marsLifeForce = this.marAge - this.lifeExpectancy;
+    // if (this.marsLifeForce <= 0) {
+    //   this.marsLifeForce = this.marsLifeForce * -1;
+    // } else {
+    //   this.marsLifeForce = this.marsLifeForce * -1;
+    // }
+    // console.log(this.marsLifeForce);
+    // return this.marsLifeForce;
+  }
 }
 
-let newTest = new GalacticAge(500, 100);
-newTest.venAge();
-newTest.venusLifeExpectancy();
+let newTest = new GalacticAge(25, 100);
+newTest.marsAge();
+newTest.marsLifeExpectancy();
 console.log(newTest);
